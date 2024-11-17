@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explaining Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .code-section {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            margin-right: 90px;
+        }
+        .code-section code {
+            display: block;
+            white-space: pre;
+            color: #d63384;
+        }
+        @keyframes slideIn {
+            from {
+                left: -100%;
+                opacity: 0;
+            }
+            to {
+                left: 0;
+                opacity: 1;
+            }
+        }
+        .slide-in {
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+        .question::before {
+            content: "➤ ";
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body style="background-image: url(img/g1.jpg);">
+    <h1>Explaining Python</h1>
+
+    <h2>Simple Python Program</h2>
+    <div class="code-section slide-in">
+        <code>
+            print("Hello, World!")
+        </code>
+    </div>
+
+    <p>
+        <h3>What is Python?</h3>
+        Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+
+        <h3>Key Features of Python:</h3>
+        <ul>
+            <li>Easy to read and write</li>
+            <li>Interpreted language</li>
+            <li>Dynamic typing</li>
+            <li>Extensive standard library</li>
+            <li>Supports multiple programming paradigms</li>
+            <li>Community support</li>
+        </ul>
+
+        <h3>Importance of Python:</h3>
+        <ul>
+            <li>Widely used in web development, data science, automation, and more</li>
+            <li>Large community and ecosystem</li>
+            <li>Rich set of libraries and frameworks</li>
+            <li>Ideal for rapid prototyping and development</li>
+        </ul>
+    </p>
+
+    <h1>INTERVIEW Q&A</h1>
+    <h2>Python Interview Questions</h2>
+    <div class="question">What are Python's key features?</div>
+    <div>Answer: Python is known for its simplicity, readability, and versatility. It supports multiple programming paradigms, has a vast standard library, and is dynamically typed and interpreted.</div>
+    
+    <div class="question">What is PEP 8?</div>
+    <div>Answer: PEP 8 is the Python Enhancement Proposal that provides guidelines and best practices on how to write Python code. It covers topics such as code layout, indentation, comments, and naming conventions.</div>
+    
+    <div class="question">What are Python decorators?</div>
+    <div>Answer: Decorators are a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure. They are usually called before the definition of a function you want to decorate.</div>
+    
+    <div class="question">What is the difference between a list and a tuple?</div>
+    <div>Answer: Lists are mutable, meaning their elements can be changed, added, or removed. Tuples are immutable, meaning once they are created, their elements cannot be changed.</div>
+    
+    <div class="question">What are list comprehensions?</div>
+    <div>Answer: List comprehensions provide a concise way to create lists. They consist of brackets containing an expression followed by a for clause, and can include multiple for or if clauses.</div>
+    
+    <div class="question">What is a lambda function?</div>
+    <div>Answer: A lambda function is a small anonymous function defined with the lambda keyword. They can have any number of arguments but only one expression, which is evaluated and returned.</div>
+    
+    <div class="question">What is the use of the 'with' statement?</div>
+    <div>Answer: The 'with' statement in Python is used for resource management and exception handling. It ensures that resources are properly acquired and released, and is commonly used with file operations.</div>
+    
+    <div class="question">Explain the concept of Python's global interpreter lock (GIL).</div>
+    <div>Answer: The GIL is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecode simultaneously. This makes some multi-threaded programs inefficient, but ensures memory management is thread-safe.</div>
+    
+    <div class="question">What is the difference between '==' and 'is'?</div>
+    <div>Answer: '==' checks for value equality, meaning it checks if the values of two objects are equal. 'is' checks for identity equality, meaning it checks if two references point to the same object in memory.</div>
+    
+    <div class="question">What is a generator in Python?</div>
+    <div>Answer: A generator is a special type of iterator in Python that allows you to iterate over a sequence of values. It is defined using a function and the 'yield' statement, which allows you to return a value and later resume from where it left off.</div>
+
+    <h2>Advanced Python Questions</h2>
+    <div class="question">What are metaclasses in Python?</div>
+    <div>Answer: Metaclasses are classes of classes that define how a class behaves. A class is an instance of a metaclass. Metaclasses allow you to control the creation and behavior of classes.</div>
+
+    <div class="question">What is the difference between deep copy and shallow copy?</div>
+    <div>Answer: A shallow copy creates a new object, but inserts references into it to the objects found in the original. A deep copy creates a new object and recursively adds copies of the objects found in the original.</div>
+
+    <div class="question">Explain the use of the 'super' keyword in Python.</div>
+    <div>Answer: The 'super' keyword in Python is used to call a method from the parent class. It is commonly used in inheritance to ensure that the parent class's __init__ method is called.</div>
+
+    <div class="question">What are Python's built-in data types?</div>
+    <div>Answer: Python's built-in data types include integers, floats, strings, lists, tuples, dictionaries, sets, and booleans.</div>
+
+    <div class="question">Explain the concept of monkey patching in Python.</div>
+    <div>Answer: Monkey patching refers to modifying or extending a class or module at runtime. It is generally used to change behavior in a third-party library or module without modifying its source code.</div>
+</body>
+</html>

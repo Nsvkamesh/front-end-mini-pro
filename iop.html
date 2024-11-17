@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explaining C and C++ Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .code-section {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            margin-right: px;
+        }
+        .code-section code {
+            display: block;
+            white-space: pre;
+            color: #d63384;
+        }
+        @keyframes slideIn {
+            from {
+                left: -100%;
+                opacity: 0;
+            }
+            to {
+                left: 0;
+                opacity: 1;
+            }
+        }
+        .slide-in {
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+        .question::before {
+            content: "➤ ";
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body style="background-image: url(img/g1.jpg);">
+    <h1>Explaining C and C++ Code</h1>
+
+    <h2>Simple C Program</h2>
+    <div class="code-section slide-in">
+        <code>
+            #include &lt;stdio.h&gt;
+
+            int main() {
+                printf("Hello, World!\n");
+                return 0;
+            }
+        </code>
+    </div>
+
+    <h2>Simple C++ Program</h2>
+    <div class="code-section slide-in">
+        <code>
+            #include &lt;iostream&gt;
+
+            int main() {
+                std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+                return 0;
+            }
+        </code>
+    </div>
+
+    <p>
+       <h3> What is C?</h3>
+C is a powerful, general-purpose programming language that was developed in the early 1970s by Dennis Ritchie at Bell Labs. It is widely used for system and application software development. C has influenced many other programming languages, including C++, C#, and Java.
+<br>
+<h3>Key Features of C:</h3>
+Low-level access to memory
+Simple set of keywords
+Clean style
+Suitable for system programming (operating systems, compilers, etc.)
+<h3>What is C++?</h3>
+C++ is an extension of the C programming language, created by Bjarne Stroustrup in 1985. C++ maintains all the features of C and adds object-oriented programming (OOP) capabilities, making it a versatile language for various types of software development.
+
+<h3>Key Features of C++:</h3>
+Supports both procedural and object-oriented programming
+Features like classes, inheritance, and polymorphism
+Standard Template Library (STL) for data structures and algorithms
+Backward compatibility with C
+    </p>
+    <p>
+        <h1>INTERVIEW Q&A</h1>
+        <h2>C++ Interview Questions</h2>
+        <div class="question">What is the difference between malloc() and calloc()?</div>
+        <div>Answer: malloc() allocates a block of memory of a specified size but does not initialize it, while calloc() allocates memory and initializes all bytes to zero.</div>
+        
+        <div class="question">Explain the difference between struct and union.</div>
+        <div>Answer: In a struct, all members have their own memory location, so the total memory is the sum of all members' sizes. In a union, all members share the same memory location, so the total memory is the size of the largest member.</div>
+        
+        <div class="question">What are pointers in C?</div>
+        <div>Answer: Pointers are variables that store the memory address of another variable. They are used for dynamic memory allocation, arrays, and functions.</div>
+        
+        <div class="question">What is a null pointer?</div>
+        <div>Answer: A null pointer is a pointer that does not point to any valid memory location. It is often used to indicate that the pointer is not currently holding any address.</div>
+        
+        <div class="question">Explain the concept of static in C.</div>
+        <div>Answer: The static keyword has different meanings based on context. In functions, it restricts the visibility of the function to the file. In variables, it preserves the value of the variable between function calls and limits the variable's scope to the file or function where it's declared.</div>
+        
+        <div class="question">What is a dangling pointer?</div>
+        <div>Answer: A dangling pointer points to a memory location that has been deallocated or freed. Using dangling pointers can lead to undefined behavior.</div>
+        
+        <div class="question">What are the different storage classes in C?</div>
+        <div>Answer: The storage classes in C are auto, register, static, and extern.</div>
+        
+        <div class="question">How does printf work?</div>
+        <div>Answer: printf is a standard library function that formats and prints a series of characters and values to the standard output.</div>
+        
+        <div class="question">Explain the difference between ++i and i++.</div>
+        <div>Answer: ++i is the pre-increment operator, which increments the value of i before using it in an expression. i++ is the post-increment operator, which increments the value of i after using it in an expression.</div>
+        
+        <div class="question">What is a segmentation fault?</div>
+        <div>Answer: A segmentation fault occurs when a program tries to access a memory location that it's not allowed to access. This often happens due to dereferencing null or invalid pointers.</div>
+        
+        <h2>C++ Interview Questions</h2>
+        
+        <div class="question">What is object-oriented programming (OOP)?</div>
+        <div>Answer: OOP is a programming paradigm based on the concept of objects, which can contain data in the form of fields (attributes or properties) and code in the form of procedures (methods). Key concepts include encapsulation, inheritance, and polymorphism.</div>
+        
+        <div class="question">What is a class in C++?</div>
+        <div>Answer: A class is a user-defined data type that serves as a blueprint for creating objects. It encapsulates data for the object and methods to manipulate that data.</div>
+        
+        <div class="question">Explain the concept of inheritance in C++.</div>
+        <div>Answer: Inheritance allows a class to derive properties and behaviors from another class. The derived class (child) inherits attributes and methods from the base class (parent), enabling code reuse and the creation of hierarchical relationships.</div>
+        
+        <div class="question">What is polymorphism in C++?</div>
+        <div>Answer: Polymorphism allows functions to operate in different ways based on the object they are acting upon. It can be achieved through function overloading (compile-time) and virtual functions (runtime).</div>
+        
+        <div class="question">What are virtual functions in C++?</div>
+        <div>Answer: Virtual functions are member functions that you expect to be overridden in derived classes. They enable runtime polymorphism.</div>
+        
+        <div class="question">What is the difference between new and malloc()?</div>
+        <div>Answer: new initializes objects and calls constructors, while malloc() simply allocates raw memory and doesn't call constructors.</div>
+        
+        <div class="question">What is a constructor and a destructor?</div>
+        <div>Answer: A constructor is a special member function that initializes objects of a class. A destructor is a special member function that cleans up before an object is destroyed.</div>
+        
+        <div class="question">Explain the concept of operator overloading.</div>
+        <div>Answer: Operator overloading allows C++ operators to be redefined and used in different ways, typically with user-defined types.</div>
+        
+        <div class="question">What are templates in C++?</div>
+        <div>Answer: Templates allow writing generic and reusable code. They enable functions and classes to operate with any data type without being rewritten for each type.</div>
+        
+        <div class="question">What is the Standard Template Library (STL)?</div>
+        <div>Answer: The STL is a powerful set of C++ template classes to provide general-purpose classes and functions with templates that implement many popular and commonly used algorithms and data structures like vectors, lists, queues, and stacks.</div>
+        
+        <h2>Additional Technical Questions</h2>
+        
+        <div class="question">What is the difference between const and constexpr in C++?</div>
+        <div>Answer: const is used to define a variable whose value cannot be changed after initialization. constexpr is used to indicate that the value of a variable or function can be computed at compile time.</div>
+        
+        <div class="question">Explain the Rule of Three, Five, and Zero in C++.</div>
+        <div>Answer: These rules provide guidelines for managing resources in C++ classes. The Rule of Three states that if a class defines one of the following: destructor, copy constructor, or copy assignment operator
+        </div>

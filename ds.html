@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explaining Data Structures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .code-section {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            margin-right: 90px;
+        }
+        .code-section code {
+            display: block;
+            white-space: pre;
+            color: #d63384;
+        }
+        @keyframes slideIn {
+            from {
+                left: -100%;
+                opacity: 0;
+            }
+            to {
+                left: 0;
+                opacity: 1;
+            }
+        }
+        .slide-in {
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+        .question::before {
+            content: "➤ ";
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body style="background-image: url(img/g1.jpg);">
+    <h1>Explaining Data Structures</h1>
+
+    <h2>Simple Array Example</h2>
+    <div class="code-section slide-in">
+        <code>
+            // Simple C++ Array
+            #include &lt;iostream&gt;
+            using namespace std;
+
+            int main() {
+                int arr[5] = {1, 2, 3, 4, 5};
+                for(int i = 0; i &lt; 5; i++) {
+                    cout &lt;&lt; arr[i] &lt;&lt; " ";
+                }
+                return 0;
+            }
+        </code>
+    </div>
+
+    <h2>Simple Linked List Example</h2>
+    <div class="code-section slide-in">
+        <code>
+            // Simple C++ Linked List
+            #include &lt;iostream&gt;
+            using namespace std;
+
+            struct Node {
+                int data;
+                Node* next;
+            };
+
+            void printList(Node* n) {
+                while (n != nullptr) {
+                    cout &lt;&lt; n->data &lt;&lt; " ";
+                    n = n->next;
+                }
+            }
+
+            int main() {
+                Node* head = new Node();
+                Node* second = new Node();
+                Node* third = new Node();
+
+                head->data = 1;
+                head->next = second;
+                second->data = 2;
+                second->next = third;
+                third->data = 3;
+                third->next = nullptr;
+
+                printList(head);
+
+                return 0;
+            }
+        </code>
+    </div>
+
+    <p>
+        <h3>What are Data Structures?</h3>
+        Data structures are ways to organize and store data in a computer so that it can be accessed and modified efficiently. They are fundamental to designing efficient algorithms and managing data.
+
+        <h3>Key Types of Data Structures:</h3>
+        <ul>
+            <li>Arrays</li>
+            <li>Linked Lists</li>
+            <li>Stacks</li>
+            <li>Queues</li>
+            <li>Trees</li>
+            <li>Graphs</li>
+            <li>Hash Tables</li>
+        </ul>
+
+        <h3>Importance of Data Structures:</h3>
+        <ul>
+            <li>Efficiency: Improves the efficiency of data manipulation and retrieval.</li>
+            <li>Reusability: Helps in reusing code and improving maintainability.</li>
+            <li>Performance: Critical for optimizing the performance of software applications.</li>
+        </ul>
+    </p>
+
+    <h1>INTERVIEW Q&A</h1>
+    <h2>Data Structures Interview Questions</h2>
+    <div class="question">What is an array?</div>
+    <div>Answer: An array is a collection of elements, each identified by an array index. Arrays store elements of the same type in contiguous memory locations.</div>
+    
+    <div class="question">Explain the difference between a linked list and an array.</div>
+    <div>Answer: Arrays have fixed size and allow random access, while linked lists are dynamic in size and elements are linked using pointers, allowing efficient insertions and deletions.</div>
+    
+    <div class="question">What is a stack?</div>
+    <div>Answer: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. Operations include push (insert), pop (remove), and peek (retrieve top element).</div>
+    
+    <div class="question">What is a queue?</div>
+    <div>Answer: A queue is a linear data structure that follows the First In, First Out (FIFO) principle. Operations include enqueue (insert), dequeue (remove), and front (retrieve front element).</div>
+    
+    <div class="question">What is a binary tree?</div>
+    <div>Answer: A binary tree is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child.</div>
+    
+    <div class="question">What is a graph?</div>
+    <div>Answer: A graph is a collection of nodes (vertices) and edges that connect pairs of nodes. Graphs can be directed or undirected, weighted or unweighted.</div>
+    
+    <div class="question">What is a hash table?</div>
+    <div>Answer: A hash table is a data structure that maps keys to values for efficient data retrieval. It uses a hash function to compute an index into an array of buckets where the desired value can be found.</div>
+    
+    <div class="question">What is a linked list?</div>
+    <div>Answer: A linked list is a linear data structure where each element (node) contains a data part and a reference (link) to the next node in the sequence.</div>
+    
+    <div class="question">What is a doubly linked list?</div>
+    <div>Answer: A doubly linked list is a type of linked list where each node contains a reference to both the next and the previous node, allowing traversal in both directions.</div>
+    
+    <div class="question">What is a tree traversal?</div>
+    <div>Answer: Tree traversal is the process of visiting all the nodes in a tree data structure in a specific order. Common methods include in-order, pre-order, and post-order traversal.</div>
+
+    <h2>Advanced Data Structures Questions</h2>
+    <div class="question">What is a balanced tree?</div>
+    <div>Answer: A balanced tree is a type of binary tree where the height difference between the left and right subtrees of any node is not more than one, ensuring O(log n) height.</div>
+
+    <div class="question">Explain the difference between BFS and DFS.</div>
+    <div>Answer: BFS (Breadth-First Search) explores all neighbors at the present depth before moving on to nodes at the next depth level, while DFS (Depth-First Search) explores as far as possible along each branch before backtracking.</div>
+
+    <div class="question">What is a priority queue?</div>
+    <div>Answer: A priority queue is an abstract data type similar to a regular queue, but each element has a priority. Elements with higher priority are dequeued before elements with lower priority.</div>
+
+    <div class="question">What is a trie?</div>
+    <div>Answer: A trie, also known as a prefix tree, is a type of search tree used to store a dynamic set or associative array where the keys are usually strings. It supports efficient string search operations.</div>
+
+    <div class="question">Explain the concept of dynamic programming.</div>
+    <div>Answer: Dynamic programming is a method for solving complex problems by breaking them down into simpler subproblems. It involves storing the results of subproblems to avoid redundant calculations.</div>
+</body>
+</html>

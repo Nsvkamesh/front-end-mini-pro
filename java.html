@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explaining Java</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .code-section {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            margin-right: 90px;
+        }
+        .code-section code {
+            display: block;
+            white-space: pre;
+            color: #d63384;
+        }
+        @keyframes slideIn {
+            from {
+                left: -100%;
+                opacity: 0;
+            }
+            to {
+                left: 0;
+                opacity: 1;
+            }
+        }
+        .slide-in {
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+        .question::before {
+            content: "➤ ";
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body style="background-image: url(img/g1.jpg);">
+    <h1>Explaining Java</h1>
+
+    <h2>Simple Java Program</h2>
+    <div class="code-section slide-in">
+        <code>
+            public class HelloWorld {
+                public static void main(String[] args) {
+                    System.out.println("Hello, World!");
+                }
+            }
+        </code>
+    </div>
+
+    <p>
+        <h3>What is Java?</h3>
+        Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.
+
+        <h3>Key Features of Java:</h3>
+        <ul>
+            <li>Platform Independent</li>
+            <li>Object-Oriented</li>
+            <li>Robust and Secure</li>
+            <li>Multithreaded</li>
+            <li>High Performance</li>
+            <li>Distributed</li>
+            <li>Dynamic</li>
+        </ul>
+
+        <h3>Importance of Java:</h3>
+        <ul>
+            <li>Widely used in enterprise-level development</li>
+            <li>Strong community support</li>
+            <li>Rich API and powerful development tools</li>
+            <li>Excellent for developing cross-platform applications</li>
+        </ul>
+    </p>
+
+    <h1>INTERVIEW Q&A</h1>
+    <h2>Java Interview Questions</h2>
+    <div class="question">What is the difference between JDK, JRE, and JVM?</div>
+    <div>Answer: JDK (Java Development Kit) is a software development kit for developing Java applications. JRE (Java Runtime Environment) is a package that provides the libraries, Java Virtual Machine (JVM), and other components to run applications written in Java. JVM (Java Virtual Machine) is an engine that provides a runtime environment to drive the Java Code or applications.</div>
+    
+    <div class="question">What is an object in Java?</div>
+    <div>Answer: An object is a real-world entity that has a state and behavior. In Java, an object is an instance of a class.</div>
+    
+    <div class="question">What is inheritance?</div>
+    <div>Answer: Inheritance is a mechanism in Java by which one class is allowed to inherit the features (fields and methods) of another class.</div>
+    
+    <div class="question">What is polymorphism?</div>
+    <div>Answer: Polymorphism in Java is the ability of an object to take many forms. It allows one interface to be used for a general class of actions. The most common use of polymorphism in OOP is when a parent class reference is used to refer to a child class object.</div>
+    
+    <div class="question">What is encapsulation?</div>
+    <div>Answer: Encapsulation is one of the four fundamental OOP concepts. It is the technique of making the fields in a class private and providing access to the fields via public methods.</div>
+    
+    <div class="question">What is an interface in Java?</div>
+    <div>Answer: An interface in Java is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces cannot contain instance fields.</div>
+    
+    <div class="question">What is a constructor in Java?</div>
+    <div>Answer: A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created. It can be used to set initial values for object attributes.</div>
+    
+    <div class="question">What is the difference between a class and an object?</div>
+    <div>Answer: A class is a blueprint or prototype from which objects are created. An object is an instance of a class.</div>
+    
+    <div class="question">What is method overloading?</div>
+    <div>Answer: Method overloading in Java is a feature that allows a class to have more than one method having the same name if their parameter lists are different.</div>
+    
+    <div class="question">What is the difference between abstract class and interface?</div>
+    <div>Answer: An abstract class can have instance methods that implement a default behavior. An interface cannot provide any code at all; only the signature of the method, and all methods are implicitly abstract.</div>
+
+    <h2>Advanced Java Questions</h2>
+    <div class="question">What is a Java Thread?</div>
+    <div>Answer: A thread is a lightweight process that can execute concurrently with other threads. Java provides built-in support for multithreaded programming.</div>
+
+    <div class="question">What is the difference between HashMap and Hashtable?</div>
+    <div>Answer: HashMap is non-synchronized and allows null values as key and value, whereas Hashtable is synchronized and does not allow null values.</div>
+
+    <div class="question">What is the Java Collection Framework?</div>
+    <div>Answer: The Java Collection Framework provides a set of interfaces and classes to handle different kinds of collections, such as lists, sets, and maps.</div>
+
+    <div class="question">What is the significance of the 'final' keyword in Java?</div>
+    <div>Answer: The 'final' keyword in Java is used to restrict the user. The 'final' class cannot be inherited, the 'final' method cannot be overridden, and the 'final' variable's value cannot be changed.</div>
+
+    <div class="question">Explain Exception Handling in Java.</div>
+    <div>Answer: Exception Handling in Java is a powerful mechanism that handles runtime errors, allowing the normal flow of the application to be maintained. It uses five keywords: try, catch, throw, throws, and finally.</div>
+</body>
+</html>

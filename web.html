@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explaining HTML, CSS, JavaScript, and Bootstrap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .code-section {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            margin-right: 90px;
+        }
+        .code-section code {
+            display: block;
+            white-space: pre;
+            color: #d63384;
+        }
+        @keyframes slideIn {
+            from {
+                left: -100%;
+                opacity: 0;
+            }
+            to {
+                left: 0;
+                opacity: 1;
+            }
+        }
+        .slide-in {
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+        .question::before {
+            content: "➤ ";
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body style="background-image: url(img/g1.jpg);">
+    <h1>Explaining HTML, CSS, JavaScript, and Bootstrap</h1>
+
+    <h2>HTML Example</h2>
+    <div class="code-section slide-in">
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;HTML Example&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Hello, World!&lt;/h1&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </div>
+
+    <h2>CSS Example</h2>
+    <div class="code-section slide-in">
+        <code>
+            body {
+                background-color: #f4f4f4;
+                font-family: Arial, sans-serif;
+            }
+
+            h1 {
+                color: #333;
+                text-align: center;
+            }
+        </code>
+    </div>
+
+    <h2>JavaScript Example</h2>
+    <div class="code-section slide-in">
+        <code>
+            &lt;script&gt;
+                document.addEventListener('DOMContentLoaded', function() {
+                    alert('Hello, World!');
+                });
+            &lt;/script&gt;
+        </code>
+    </div>
+
+    <h2>Bootstrap Example</h2>
+    <div class="code-section slide-in">
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                &lt;link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"&gt;
+                &lt;title&gt;Bootstrap Example&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;div class="container"&gt;
+                    &lt;h1 class="text-center mt-5"&gt;Hello, World!&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </div>
+
+    <p>
+        <h3>What is HTML?</h3>
+        HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure of a web page and its contents.
+        <br>
+        <h3>Key Features of HTML:</h3>
+        <ul>
+            <li>Elements and tags for structuring content</li>
+            <li>Attributes for providing additional information</li>
+            <li>Supports multimedia (images, audio, video)</li>
+            <li>Hyperlinks for navigation</li>
+        </ul>
+
+        <h3>What is CSS?</h3>
+        CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS defines how elements should be rendered on screen, paper, or other media.
+        <br>
+        <h3>Key Features of CSS:</h3>
+        <ul>
+            <li>Selectors and properties for styling elements</li>
+            <li>Box model for layout</li>
+            <li>Responsive design with media queries</li>
+            <li>Flexbox and grid for complex layouts</li>
+        </ul>
+
+        <h3>What is JavaScript?</h3>
+        JavaScript is a versatile, high-level programming language primarily used for enhancing web pages to provide a dynamic and interactive user experience. It is an essential part of web development, working alongside HTML and CSS.
+        <br>
+        <h3>Key Features of JavaScript:</h3>
+        <ul>
+            <li>Dynamic typing</li>
+            <li>Prototype-based object-orientation</li>
+            <li>First-class functions</li>
+            <li>Event-driven programming</li>
+            <li>Asynchronous programming with callbacks, promises, and async/await</li>
+        </ul>
+
+        <h3>What is Bootstrap?</h3>
+        Bootstrap is a popular front-end framework for building responsive and mobile-first websites. It provides CSS and JavaScript components for forms, buttons, navigation, and more.
+        <br>
+        <h3>Key Features of Bootstrap:</h3>
+        <ul>
+            <li>Responsive grid system</li>
+            <li>Pre-styled components</li>
+            <li>JavaScript plugins</li>
+            <li>Customizable with Sass variables and mixins</li>
+        </ul>
+    </p>
+
+    <h1>INTERVIEW Q&A</h1>
+    <h2>HTML Interview Questions</h2>
+    <div class="question">What is the purpose of the `DOCTYPE` declaration in HTML?</div>
+    <div>Answer: The `DOCTYPE` declaration defines the document type and version of HTML. It helps browsers render the page correctly.</div>
+    
+    <div class="question">What are HTML semantic elements?</div>
+    <div>Answer: Semantic elements clearly describe their meaning in a human- and machine-readable way, such as &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, and &lt;section&gt;.</div>
+    
+    <div class="question">Explain the difference between classes and IDs in HTML.</div>
+    <div>Answer: Classes are reusable and can be assigned to multiple elements, while IDs are unique and should be assigned to a single element.</div>
+    
+    <div class="question">What is the purpose of the `alt` attribute in images?</div>
+    <div>Answer: The `alt` attribute provides alternative text for an image if it cannot be displayed. It improves accessibility and SEO.</div>
+
+    <h2>CSS Interview Questions</h2>
+    <div class="question">What is the box model in CSS?</div>
+    <div>Answer: The box model represents the structure of an element, including its content, padding, border, and margin.</div>
+    
+    <div class="question">Explain the difference between `inline`, `block`, and `inline-block` elements.</div>
+    <div>Answer: `inline` elements do not start on a new line and only take up as much width as necessary. `block` elements start on a new line and take up the full width available. `inline-block` elements are like `inline` elements but can have width and height set.</div>
+    
+    <div class="question">What are CSS selectors?</div>
+    <div>Answer: CSS selectors are patterns used to select elements to style. Examples include class selectors (.class), ID selectors (#id), and type selectors (element).</div>
+    
+    <div class="question">How do you create a CSS flexbox layout?</div>
+    <div>Answer: To create a flexbox layout, set the container's display property to `flex`. Use flex properties like `justify-content`, `align-items`, and `flex-direction` to control the layout.</div>
+
+    <h2>JavaScript Interview Questions</h2>
+    <div class="question">What is the difference between `let`, `const`, and `var` in JavaScript?</div>
+    <div>Answer: `let` and `const` are block-scoped, while `var` is function-scoped. `const` declares constants whose values cannot be changed, while `let` and `var` can be reassigned.</div>
+
+    <div class="question">What is a closure in JavaScript?</div>
+    <div>Answer: A closure is a function that has access to its own scope, the scope of the outer function, and the global scope. Closures are created every time a function is created.</div>
+
+    <div class="question">Explain the event loop in JavaScript.</div>
+    <div>Answer: The event loop handles asynchronous code by pushing tasks to the call stack when the stack is empty, allowing non-blocking operations.</div>
+
+    <div class="question">What is the difference between `==` and `===`?</div>
+    <div>Answer: `==` checks for value equality with type coercion, while `===` checks for both value and type equality without coercion.</div>
+
+    <h2>Bootstrap Interview Questions</h2>
+    <div class="question">What is Bootstrap's grid system?</div>
+    <div>Answer: Bootstrap's grid system is a responsive layout system with 12 columns, allowing you to create complex layouts with rows and columns.</div>
+
+    <div class="question">How do you use Bootstrap's navigation bar?</div>
+    <div>Answer: Use the `navbar` class and related classes like `navbar-expand`, `navbar-light`, and `navbar-dark` to create a responsive navigation bar.</div>
+
+    <div class="question">What are Bootstrap's utility classes?</div>
+    <div>Answer: Utility classes are predefined classes for common CSS properties like margin, padding, text alignment, and display.</div>
+
+    <div class="question">How do you customize Bootstrap?</div>
+    <div>Answer: Customize Bootstrap by overriding its styles in your own CSS file, using Bootstrap's Sass variables and mixins, or using the Bootstrap customizer.</div>
+
+    <div class="question">What are Bootstrap's components?</div>
+    <div>Answer: Bootstrap components are pre-styled UI elements like buttons, forms, modals, carousels, and alerts that you can use to build responsive web pages quickly.</div>
+</body>
+</html>
